@@ -40,7 +40,9 @@ function CargarDatos(e){
             `;
             document.getElementById('resultado').innerHTML = template; 
 
-        });
+        }).catch(function(){
+            alert('Ha ocurrido un error al cargar los datos');
+    });
 }
 
 document.getElementById('Limpiar').addEventListener('click',function(e){
